@@ -7,7 +7,6 @@ This project demonstrates *2D geometric transformations* in Python, including:
 - *Translation*
 - *Scaling*
 - *Rotation*
-- *Reflection*
 - *Shear*
 - *Similarity Transformation*
 - *Affine Transformation*
@@ -32,10 +31,6 @@ The transformations are implemented using *NumPy* and *Matplotlib* for visualiza
 
 ![Rotation](https://latex.codecogs.com/svg.latex?\begin%7Bbmatrix%7Dx%27%5C%5Cy%27%5C%5C1%5Cend%7Bbmatrix%7D=%5Cbegin%7Bbmatrix%7D\cos\theta&\sin\theta&0%5C%5C-\sin\theta&\cos\theta&0%5C%5C0&0&1%5Cend%7Bbmatrix%7D\begin%7Bbmatrix%7Dx%5C%5Cy%5C%5C1%5Cend%7Bbmatrix%7D)
 
-
-**Reflection across the X-axis**
-
-![Reflection](https://latex.codecogs.com/svg.latex?\begin%7Bbmatrix%7Dx%27%5C%5Cy%27%5C%5C1%5Cend%7Bbmatrix%7D=%5Cbegin%7Bbmatrix%7D1&0&0%5C%5C0&-1&0%5C%5C0&0&1%5Cend%7Bbmatrix%7D\begin%7Bbmatrix%7Dx%5C%5Cy%5C%5C1%5Cend%7Bbmatrix%7D)
 
 **Shear Transformation**
 
