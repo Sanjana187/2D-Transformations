@@ -24,22 +24,9 @@ The transformations are implemented using *NumPy* and *Matplotlib* for visualiza
 
 
 
-### 2. Scaling
-$$
-\begin{bmatrix}
-x' \\ y' \\ 1
-\end{bmatrix}
-=
-\begin{bmatrix}
-s_x & 0 & 0 \\
-0 & s_y & 0 \\
-0 & 0 & 1
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-x \\ y \\ 1
-\end{bmatrix}
-$$
+**Scaling Transformation**
+
+![Scaling](https://latex.codecogs.com/svg.latex?\begin%7Bbmatrix%7Dx%27%5C%5Cy%27%5C%5C1%5Cend%7Bbmatrix%7D=%5Cbegin%7Bbmatrix%7Ds_x&0&0%5C%5C0&s_y&0%5C%5C0&0&1%5Cend%7Bbmatrix%7D\begin%7Bbmatrix%7Dx%5C%5Cy%5C%5C1%5Cend%7Bbmatrix%7D)
 
 ### 3. Rotation
 $$
