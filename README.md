@@ -18,22 +18,10 @@ The transformations are implemented using *NumPy* and *Matplotlib* for visualiza
 ---
 
 ## 🔹 Mathematical Background
-### 1. Translation
-$$
-\begin{bmatrix}
-x' \\ y' \\ 1
-\end{bmatrix}
-=
-\begin{bmatrix}
-1 & 0 & t_x \\
-0 & 1 & t_y \\
-0 & 0 & 1
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-x \\ y \\ 1
-\end{bmatrix}
-$$
+**Translation Matrix**
+
+![Translation](https://latex.codecogs.com/svg.latex?\begin%7Bbmatrix%7Dx%27%5C%5Cy%27%5C%5C1%5Cend%7Bbmatrix%7D=%5Cbegin%7Bbmatrix%7D1&0&t_x%5C%5C0&1&t_y%5C%5C0&0&1%5Cend%7Bbmatrix%7D\begin%7Bbmatrix%7Dx%5C%5Cy%5C%5C1%5Cend%7Bbmatrix%7D)
+
 
 
 ### 2. Scaling
