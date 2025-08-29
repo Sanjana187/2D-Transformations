@@ -18,7 +18,6 @@ The transformations are implemented using *NumPy* and *Matplotlib* for visualiza
 ---
 
 ## 🔹 Mathematical Background
-
 ### 1. Translation
 $$
 \begin{bmatrix}
@@ -35,7 +34,6 @@ x' \\ y' \\ 1
 x \\ y \\ 1
 \end{bmatrix}
 $$
-
 
 
 ### 2. Scaling
