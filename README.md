@@ -53,10 +53,10 @@ Normalization:
 ![Normalization](https://latex.codecogs.com/svg.latex?x%27=\frac{x%27}{w},%5Cquad%20y%27=\frac{y%27}{w})
 
 
-Final coordinates after normalization:
-$$
-x' = \frac{x'}{w}, \quad y' = \frac{y'}{w}
-$$
+**Final coordinates after normalization:**
+
+![Normalization](https://latex.codecogs.com/svg.latex?x%27=\frac{x%27}{w},\quad%20y%27=\frac{y%27}{w})
+
 
 ---
 
