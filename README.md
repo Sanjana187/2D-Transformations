@@ -49,7 +49,7 @@ The transformations are implemented using *NumPy* and *Matplotlib* for visualiza
 
 ![Projective](https://latex.codecogs.com/svg.latex?\begin%7Bbmatrix%7Dx%27%5C%5Cy%27%5C%5Cw%5Cend%7Bbmatrix%7D=%5Cbegin%7Bbmatrix%7Dh_%7B11%7D&h_%7B12%7D&h_%7B13%7D%5C%5Ch_%7B21%7D&h_%7B22%7D&h_%7B23%7D%5C%5Ch_%7B31%7D&h_%7B32%7D&h_%7B33%7D%5Cend%7Bbmatrix%7D\begin%7Bbmatrix%7Dx%5C%5Cy%5C%5C1%5Cend%7Bbmatrix%7D)
 
-Normalization:  
+**Normalization:**  
 ![Normalization](https://latex.codecogs.com/svg.latex?x%27=\frac{x%27}{w},%5Cquad%20y%27=\frac{y%27}{w})
 
 
@@ -60,4 +60,41 @@ Normalization:
 
 ---
 
-## 🔹 Project Structure
+## 📂 Project Structure
+
+2D-Geometric-Transformations/
+│
+├── IPA_Pythoncode.ipynb # Jupyter Notebook with implementations
+├── README.md # Project documentation
+└── requirements.txt # Dependencies
+
+
+---
+
+
+---
+
+## How to Run
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/2D-Geometric-Transformations.git
+cd 2D-Geometric-Transformations
+```
+
+**2. Install dependencies:**
+
+pip install -r requirements.txt
+
+**3. Run with Jupyter Notebook**
+
+jupyter notebook IPA_Pythoncode.ipynb
+
+
+**Requirements** :
+
+numpy
+
+matplotlib
+
+jupyter
