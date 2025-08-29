@@ -28,109 +28,35 @@ The transformations are implemented using *NumPy* and *Matplotlib* for visualiza
 
 ![Scaling](https://latex.codecogs.com/svg.latex?\begin%7Bbmatrix%7Dx%27%5C%5Cy%27%5C%5C1%5Cend%7Bbmatrix%7D=%5Cbegin%7Bbmatrix%7Ds_x&0&0%5C%5C0&s_y&0%5C%5C0&0&1%5Cend%7Bbmatrix%7D\begin%7Bbmatrix%7Dx%5C%5Cy%5C%5C1%5Cend%7Bbmatrix%7D)
 
-### 3. Rotation
-$$
-\begin{bmatrix}
-x' \\ y' \\ 1
-\end{bmatrix}
-=
-\begin{bmatrix}
-\cos\theta & \sin\theta & 0 \\
--\sin\theta & \cos\theta & 0 \\
-0 & 0 & 1
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-x \\ y \\ 1
-\end{bmatrix}
-$$
+**Rotation Transformation**
 
-### 4. Reflection
-Reflection across the x-axis:
-$$
-\begin{bmatrix}
-x' \\ y' \\ 1
-\end{bmatrix}
-=
-\begin{bmatrix}
-1 & 0 & 0 \\
-0 & -1 & 0 \\
-0 & 0 & 1
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-x \\ y \\ 1
-\end{bmatrix}
-$$
+![Rotation](https://latex.codecogs.com/svg.latex?\begin%7Bbmatrix%7Dx%27%5C%5Cy%27%5C%5C1%5Cend%7Bbmatrix%7D=%5Cbegin%7Bbmatrix%7D\cos\theta&\sin\theta&0%5C%5C-\sin\theta&\cos\theta&0%5C%5C0&0&1%5Cend%7Bbmatrix%7D\begin%7Bbmatrix%7Dx%5C%5Cy%5C%5C1%5Cend%7Bbmatrix%7D)
 
-### 5. Shear
-$$
-\begin{bmatrix}
-x' \\ y' \\ 1
-\end{bmatrix}
-=
-\begin{bmatrix}
-1 & k_x & 0 \\
-k_y & 1 & 0 \\
-0 & 0 & 1
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-x \\ y \\ 1
-\end{bmatrix}
-$$
 
-### 6. Similarity Transformation
-Combination of scaling, rotation, and translation:
-$$
-\begin{bmatrix}
-x' \\ y' \\ 1
-\end{bmatrix}
-=
-\begin{bmatrix}
-s\cos\theta & s\sin\theta & t_x \\
--s\sin\theta & s\cos\theta & t_y \\
-0 & 0 & 1
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-x \\ y \\ 1
-\end{bmatrix}
-$$
+**Reflection across the X-axis**
 
-### 7. Affine Transformation
-$$
-\begin{bmatrix}
-x' \\ y' \\ 1
-\end{bmatrix}
-=
-\begin{bmatrix}
-a_{11} & a_{12} & t_x \\
-a_{21} & a_{22} & t_y \\
-0 & 0 & 1
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-x \\ y \\ 1
-\end{bmatrix}
-$$
+![Reflection](https://latex.codecogs.com/svg.latex?\begin%7Bbmatrix%7Dx%27%5C%5Cy%27%5C%5C1%5Cend%7Bbmatrix%7D=%5Cbegin%7Bbmatrix%7D1&0&0%5C%5C0&-1&0%5C%5C0&0&1%5Cend%7Bbmatrix%7D\begin%7Bbmatrix%7Dx%5C%5Cy%5C%5C1%5Cend%7Bbmatrix%7D)
 
-### 8. Projective Transformation
-$$
-\begin{bmatrix}
-x' \\ y' \\ w
-\end{bmatrix}
-=
-\begin{bmatrix}
-h_{11} & h_{12} & h_{13} \\
-h_{21} & h_{22} & h_{23} \\
-h_{31} & h_{32} & h_{33}
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-x \\ y \\ 1
-\end{bmatrix}
-$$
+**Shear Transformation**
+
+![Shear](https://latex.codecogs.com/svg.latex?\begin%7Bbmatrix%7Dx%27%5C%5Cy%27%5C%5C1%5Cend%7Bbmatrix%7D=%5Cbegin%7Bbmatrix%7D1&k_x&0%5C%5Ck_y&1&0%5C%5C0&0&1%5Cend%7Bbmatrix%7D\begin%7Bbmatrix%7Dx%5C%5Cy%5C%5C1%5Cend%7Bbmatrix%7D)
+
+**Similarity Transformation**
+
+![Similarity](https://latex.codecogs.com/svg.latex?\begin%7Bbmatrix%7Dx%27%5C%5Cy%27%5C%5C1%5Cend%7Bbmatrix%7D=%5Cbegin%7Bbmatrix%7Ds\cos\theta&s\sin\theta&t_x%5C%5C-s\sin\theta&s\cos\theta&t_y%5C%5C0&0&1%5Cend%7Bbmatrix%7D\begin%7Bbmatrix%7Dx%5C%5Cy%5C%5C1%5Cend%7Bbmatrix%7D)
+
+**Affine Transformation**
+
+![Affine](https://latex.codecogs.com/svg.latex?\begin%7Bbmatrix%7Dx%27%5C%5Cy%27%5C%5C1%5Cend%7Bbmatrix%7D=%5Cbegin%7Bbmatrix%7Da_%7B11%7D&a_%7B12%7D&t_x%5C%5Ca_%7B21%7D&a_%7B22%7D&t_y%5C%5C0&0&1%5Cend%7Bbmatrix%7D\begin%7Bbmatrix%7Dx%5C%5Cy%5C%5C1%5Cend%7Bbmatrix%7D)
+
+
+**Projective Transformation**
+
+![Projective](https://latex.codecogs.com/svg.latex?\begin%7Bbmatrix%7Dx%27%5C%5Cy%27%5C%5Cw%5Cend%7Bbmatrix%7D=%5Cbegin%7Bbmatrix%7Dh_%7B11%7D&h_%7B12%7D&h_%7B13%7D%5C%5Ch_%7B21%7D&h_%7B22%7D&h_%7B23%7D%5C%5Ch_%7B31%7D&h_%7B32%7D&h_%7B33%7D%5Cend%7Bbmatrix%7D\begin%7Bbmatrix%7Dx%5C%5Cy%5C%5C1%5Cend%7Bbmatrix%7D)
+
+Normalization:  
+![Normalization](https://latex.codecogs.com/svg.latex?x%27=\frac{x%27}{w},%5Cquad%20y%27=\frac{y%27}{w})
+
 
 Final coordinates after normalization:
 $$
