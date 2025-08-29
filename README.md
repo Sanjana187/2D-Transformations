@@ -19,22 +19,6 @@ The transformations are implemented using *NumPy* and *Matplotlib* for visualiza
 
 ## 🔹 Mathematical Background
 
-### 1. Translation
-$$
-\begin{bmatrix}
-x' \\ y' \\ 1
-\end{bmatrix}
-=
-\begin{bmatrix}
-1 & 0 & t_x \\
-0 & 1 & t_y \\
-0 & 0 & 1
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-x \\ y \\ 1
-\end{bmatrix}
-$$
 ![Translation](https://latex.codecogs.com/svg.latex?\begin{bmatrix}x'\\y'\\1\end{bmatrix}=\begin{bmatrix}1&0&t_x\\0&1&t_y\\0&0&1\end{bmatrix}\begin{bmatrix}x\\y\\1\end{bmatrix})
 
 ### 2. Scaling
